@@ -1,0 +1,57 @@
+body {
+	
+	
+}
+
+#banner { /*id usado uma única vez*/
+
+	width: 100%;
+}
+
+.principal { /*classe pode ser chamada ´n vezes*/
+	background: #CCCCCC;
+	padding: 30px;/*Espaçamento internos */
+}
+
+.titulo-principal{
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center;
+}	
+
+p { 
+	text-align: center;
+}	
+
+#missao {
+	
+	font-size: 20px;
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens {
+	font-style: italic;
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;/*Espaçamento internos */
+}
+
+
+
+ul {
+	display: inline-block; /*coloca a imagem ajustada com a lista */
+	vertical-align: top; /*coloca a lista colada na borda de cima */
+	width: 20%;
+	margin-right: 15%; /*margem a direta,espaço para a imagem */
+}
+
+.imagembeneficios {
+	width: 50%;
+}
