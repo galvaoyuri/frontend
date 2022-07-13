@@ -1,0 +1,31 @@
+header	{
+	background: #BBBBBB;
+	padding: 25px 0 0;
+}
+
+.caixa	{ /*precisa por o menu dentro de uma caixa*/
+	position: relative;
+	width: 940px;
+	margin: 0 auto;/*ficam os 940px caixa calcula a margem automaticamente indiferente da tela*/
+}
+
+nav {/*posicionamento statico, incia no padrão a esquerda, posicionamento relativo você altera dem relação a posição padrão ou estatica*/
+	position: absolute;
+	top: 110px ;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px; /* em cima, embaixo, direta,cesquerda*/
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold; /*texto em negrito*/
+	font-size: 22px;
+	text-decoration: none;/*texto sem decoração, sem sublinhado*/
+
+
+} 
