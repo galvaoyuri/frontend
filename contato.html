@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>Contato - Barbearia Alura</title>
+
+ 		<link rel="stylesheet" href="reset.css"><!Tirar bordas e estilos padrões>
+ 		<link rel="stylesheet" href="style.css">
+ 	</head>
+ 	<body>
+ 		<header>
+ 			<div class="caixa">
+	 			<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+	 			<nav>
+		 			<ul>
+		 				<li><a href="index.html">Home</a></li>
+		 				<li><a href="produtos.html"> Produtos</a></li>
+		 				<li><a href="contatos.html">Contato</a></li>
+		 			</ul>
+	 			</nav>
+ 			</div>
+ 		</header>
+ 		<main>
+ 			<form>
+ 				<label for="nomesobrenome">Nome e sobrenome: </label><!/*For facilita o usuário clicar no nome para escrever*/>
+ 				<input type="text" id="nomesobrenome" class="input-padrao" required><!required = campo obrigatorio>
+
+ 				<label for="email">Email</label>
+ 				<input type="email" id="email"class="input-padrao" required placeholder="seuemail@dominio.com"><!placeholder texto exlicativo">
+
+ 				<label for="telefone">Telefone</label>
+ 				<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) x xxxx-xxxx">
+
+ 				<label for="mensagem">Mensagem</label>
+ 				<textarea cols="65" rows="10" id="mensagem" class="input-padrao"></textarea> <!área para que possa escrever várias linhas de texto>
+
+ 				<fieldset><!site mobile input, mostra tipos de input para facilitar no celular>
+	 				<legend>Como prefere o nosso contato?</legend> <!texto em fieldset usa-se tag legend>
+	 				<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>	
+	 				
+
+	 				<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+	 					
+
+	 				<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label><!whatsapp inicia marcado>
+	 				
+ 				</fieldset><!divisão para formulários>
+ 				<fieldset>
+	 				<legend>Qual horário prefere ser atendido?</legend>
+	 				<select>
+	 					<option>Manhã</option>
+	 					<option>Tarde</option>
+	 					<option>Noite</option>
+	 				</select>
+ 				</fieldset>	
+
+ 				<label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+
+
+ 				<input type="submit" value="Enviar fomulário" class="enviar">
+ 			</form>
+ 			<table>
+ 				<thead><!Titulo da tabela>
+	 				<tr><!Linhas da tabela>
+	 					<th>Dia</th><!Colunas da tabela>
+	 					<th>Horário</th>
+	 				</tr>
+	 			</thead>
+	 			<tbody><!Corpo da tabela>
+	 				<tr>
+	 					<td>Segunda</td> <!td colspan mescla células>
+	 					<td>8h ~ 20h</td>
+	 				</tr>
+	 				<tr>
+	 					<td>Quarta</td>
+	 					<td>8h ~ 20h</td>
+	 				</tr>
+	 				<tr>
+	 					<td>Sexta</td>
+	 					<td>8h ~ 20h</td>
+	 				</tr>
+ 				</tbody>
+ 			</table>
+
+
+ 		</main>
+ 		<footer>
+ 			<img src="logo-branco.png" alt="Logo da Barbearia Alura"><!alt dá mais acessibilida para baixa visão>
+ 			<p class="copyright">&copy Copyright Barbearia Alura - 2019</p><!&copy coloca o unicode C do copyright também serve para emojin)
+ 		</footer>
+ 		
+ 	</body>
+ </html>

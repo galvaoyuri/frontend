@@ -1,56 +1,145 @@
-body {	
-	
+header	{
+	background: #BBBBBB;
+	padding: 25px 0 0;
 }
 
-#banner { /*id usado uma única vez*/
-
-	width: 100%;
+.caixa	{ /*precisa por o menu dentro de uma caixa*/
+	position: relative;
+	width: 940px;
+	margin: 0 auto;/*ficam os 940px caixa calcula a margem automaticamente indiferente da tela*/
 }
 
-.principal { /*classe pode ser chamada ´n vezes*/
-	background: #CCCCCC;
-	padding: 30px;/*Espaçamento internos */
+nav {/*posicionamento statico, incia no padrão a esquerda, posicionamento relativo você altera dem relação a posição padrão ou estatica*/
+	position: absolute;
+	top: 110px ;
+	right: 0px;
 }
 
-.titulo-principal{
-	padding-left: 20px;
+nav li {
+	display: inline;
+	margin: 0 0 0 15px; /* em cima, embaixo, direta,cesquerda*/
 }
 
-.titulo-centralizado {
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold; /*texto em negrito*/
+	font-size: 22px;
+	text-decoration: none;/*texto sem decoração, sem sublinhado*/
+} 
+
+nav a:hover {/* quando o mouse está apontando */
+	color: #C78C19;
+	text-decoration: underline;
+}
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.produtos li{
+	display: inline-block;
 	text-align: center;
-}	
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%; /*margem externa entre produtos*/
+	padding:30px 20px;/*margem cima+baixo e esq+dire interna entre produtos e margem*/
+	box-sizing: border-box;/*para que a pagina nao some pixel + percentual*/
+	border-color: #000000;
+	border:  2px solid #000000; /*pode ser feita em apenas uma declaracao*/
+	/*border-width: 2px; borda pode ser feita de forma dividida top,botton,left and right
+	border-style: solid;pode ser tambem tracejada, ou pontos*/
+	border-top-width: 10px;
+	border-radius: 10px;
 
-p { 
+}
+.produtos li:hover {
+	border-color: #C78C19;
+	font-size: 40px;
+}
+.produtos li:active { /*Quando estiver com mouse pressionado*/
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 { /*Vai alterar o elemento h2, que já foi definido o tamanho do título*/
+	font-size: 34px;
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+ .produto-descricao{
+ 	font-size: 18px;
+ }
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer	{
 	text-align: center;
-}	
+	background: url("bg.jpg");/*chama a imagem de fundo e automaticamente ela preenche toda a página*/
+	padding: 40px 0;
+}
 
-#missao {
-	
+.copyright {
+	color:  #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0 ;
+	/*site unicode table tem busca de caracteres especiais */
+}
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+form{
+	margin: 40px 0;
+}
+form label, form legend {/*se separado por vírgula aplica para duas tag´s*/
+	display: block;
 	font-size: 20px;
+	margin: 0 0 10px;
 }
-
-em strong {
-	color: #FF0000;
-}
-
-.itens {
-	font-style: italic;
-}
-
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;/*Espaçamento internos */
-}
-
-
-
-ul {
-	display: inline-block; /*coloca a imagem ajustada com a lista */
-	vertical-align: top; /*coloca a lista colada na borda de cima */
-	width: 20%;
-	margin-right: 15%; /*margem a direta,espaço para a imagem */
-}
-
-.imagembeneficios {
+.input-padrao {
+	display: block;
+	margin: 0 20px;
+	padding: 10px;
 	width: 50%;
+}
+
+.checkbox { 
+	margin: 20px 5px;
+
+}
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition:1s all;/*mudança de cor com mouse em cima demora 1 segundo all = todos elementos*/
+	cursor: pointer;/*muda o mouse para mãozinha*/
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2) /*rotate(10deg); roda o item*/
+
+}
+
+table {
+	margin: 20px 0 40px;
+}
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px; 
 }
